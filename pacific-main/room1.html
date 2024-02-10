@@ -2,341 +2,493 @@
 <html lang="en">
 
 <head>
-    <title>Pacific - Free Bootstrap 4 Template by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+  <title>Room</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/animate.css">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
 
 
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        const myCarouselElement = document.querySelector('#myCarousel')
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-        const carousel = new bootstrap.Carousel(myCarouselElement, {
-            interval: 2000,
-            touch: false
-        })
-    </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const myCarouselElement = document.querySelector('#carouselExampleAutoplaying');
+      const carousel = new bootstrap.Carousel(myCarouselElement, {
+        interval: 6000,
+        touch: false
+      });
+    });
+
+  </script>
+
+  <style>
+    .room-thumbnail img {
+      width: 350px;
+      height: 220px;
+      border-radius: 4px;
+    }
+
+    .room-content {
+      -webkit-box-flex: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+      padding-left: 50px;
+    }
+
+    .service-item {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .service-item img {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .slider-range {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+    }
+
+    .form-range {
+      width: 100%;
+      appearance: none;
+      /* Remove default styles */
+      background-color: rgb(45, 175, 45);
+      height: 10px;
+      border-radius: 5px;
+    }
+
+    .form-range::-webkit-slider-thumb {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s;
+    }
+  
+  .single-service--area img {
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover; 
+  }
+  .service-item {
+    margin-right: 30px; 
+    margin-left: 30px;
+  
+  }
+
+    #sliderValue {
+      color: #afb8b1;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="col-md-7 ftco-animate">
-        <span class="subheading"
-            style="font-size: 60px; display: block; margin: 5px; color: rgb(78, 176, 37); font-family: 'Arizonia', cursive; text-align: center;">Resort
-            Terra Paraiso
-        </span>
+  <div class="col-md-7 ftco-animate">
+    <span class="subheading"
+      style="font-size: 60px; display: block; margin: 5px; color: rgb(7, 9, 7); font-family: 'Arizonia', cursive; text-align: center;">Resort
+      Terra Paraiso
+    </span>
+  </div>
+
+  <section>
+
+    <div class="container mb-4 text-center" style="box-shadow: 0 10px 20px rgba(17, 21, 29, 0.1);border-radius: 15px;">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-3 mt-3 ml-1">
+            <h2 style="color: rgb(245, 164, 65);">Excellent</h2>
+            <p style="text-align:left"> <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+              <i class="bi bi-star-fill" style="color: #ffc107"></i>
+              <i class="bi bi-star-fill" style="color: #ffc107"></i>
+              <i class="bi bi-star-fill" style="color: #ffc107"></i> 4/5
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: red;">(1243)</span> Reviews
+            </p>
+            <h6 style="color:black; font-weight: 600;">Check-In : 3:00 pm</h6>
+            <h6 style="color: black;font-weight: 600;">Check-Out : 12:00 pm</h6>
+            <div
+              style="text-align: left; margin-top: 5px; margin-left: 5px; color: black; font-size: small;line-height: 2.3; font-weight: 400;">
+              <i class="bi bi-check2-circle fs-4"></i> Free Cancellation </br>
+              <i class="bi bi-wifi"></i> Free wi-fi</br>
+              <i class="bi bi-cup-hot-fill"></i> Free Breakfast<br>
+              <i class="bi bi-shield-lock"></i> 24 x 7 Security<br>
+              <i class="bi bi-cup-straw"></i> 24 x 7 Room Service <br>
+              <i class="bi bi-snow"></i> A/C Rooms, Power Back ups<br>
+              <i class="bi bi-tv"></i> DTH Service<br>
+              <i class="bi bi-people-fill"></i> Couple Friendly
+            </div>
+          </div>
+          <div class="col ">
+            <div class="col p-4 ">
+              <div id="carouselExampleAutoplaying" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="https://publish.purewow.net/wp-content/uploads/sites/2/2019/08/grand-velas.jpeg?fit=1360%2C906"
+                      class="d-block w-100 p-2" style="height: 400px; border-radius: 15px;" alt="...">
+                  </div>
+                  <div class="carousel-item p-1">
+                    <img
+                      src="https://media.cnn.com/api/v1/images/stellar/prod/140127103345-peninsula-shanghai-deluxe-mock-up.jpg?q=w_2226,h_1449,x_0,y_0,c_fill"
+                      class="d-block w-100" style="height: 400px;border-radius: 15px;" alt="...">
+                  </div>
+                  <div class="carousel-item p-1">
+                    <img
+                      src="https://www.oberoihotels.com/-/media/oberoi-hotels/website-images/the-oberoi-mumbai/room-and-suites/luxury-room/detail/mumbai-luxury-rooms-suites-724x407.jpg"
+                      class="d-block w-100" style="height: 400px; border-radius: 15px;" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="service-content d-flex align-items-center ">
 
-    <section>
-        <div class="container bg-light p-3 mb-4 text-center">
-            <div class="container text-center">
+          <div class="single-service--area mb-100 wow fadeInUp" data-wow-delay="100ms">
+            <div class="service-item">
+              <img src="https://preview.colorlib.com/theme/roberto/img/core-img/icon-1.png.webp" alt>
+              <h5>Transportion</h5>
+            </div>
+          </div>
+
+          <div class="single-service--area mb-100 wow fadeInUp" data-wow-delay="300ms">
+            <div class="service-item">
+              <img src="https://preview.colorlib.com/theme/roberto/img/core-img/icon-2.png.webp" alt>
+              <h5>Reiseservice</h5>
+            </div>
+          </div>
+
+          <div class="single-service--area mb-100 wow fadeInUp" data-wow-delay="500ms">
+            <div class="service-item">
+              <img src="https://preview.colorlib.com/theme/roberto/img/core-img/icon-3.png.webp" alt>
+              <h5>Spa Relaxtion</h5>
+            </div>
+          </div>
+
+          <div class="single-service--area mb-100 wow fadeInUp" data-wow-delay="700ms">
+            <div class="service-item">
+              <img src="https://preview.colorlib.com/theme/roberto/img/core-img/icon-4.png.webp" alt>
+              <h5>Restaurant</h5>
+            </div>
+          </div>
+
+          <div class="single-service--area mb-100 wow fadeInUp" data-wow-delay="900ms">
+            <div class="service-item">
+              <img src="https://preview.colorlib.com/theme/roberto/img/core-img/icon-1.png.webp" alt>
+              <h5>Bar &amp; Drink</h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- new -->
+  <div class="roberto-rooms-area section-padding-100-0">
+    <div class="container ">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+
+          <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="100ms">
+
+            <div class="room-thumbnail">
+              <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/43.jpg" alt>
+            </div>
+
+            <div class="room-content">
+              <h2>Room View Sea</h2>
+              <h6><span style="color: rgb(45, 175, 45); font-size:20px;display: inline-block;"><i
+                    class="bi bi-currency-rupee"></i>5,000</span> <span>/ Day</span></h6>
+
+              <div class="room-feature">
+                <p style=" line-height: 20px;"><strong><i class="bi bi-bounding-box-circles"></i>  Size: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="bi bi-people-fill"></i>  Capacity:</strong><span
+                    style="display: block;">30 ft&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max persion 5</span></p>
+                <p style="margin-bottom: 2px;line-height: 20px;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+                  <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                </svg>  Bed: &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-tv-fill"></i>  Services:</strong><span
+                    style="display: block;">King
+                    beds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wifi,
+                    television ...</span></p>
+              </div>
+              <a href="checkout.html" class="btn view-detail-btn" style="color: rgb(45, 175, 45);">Checkout <i
+                  class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <br>
+          <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="100ms">
+
+            <div class="room-thumbnail">
+              <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/44.jpg" alt>
+            </div>
+
+            <div class="room-content">
+              <h2 style="margin-top: 1px;">Small Room</h2>
+              <h6><span style="color: rgb(45, 175, 45); font-size:20px;display: inline-block;"><i
+                    class="bi bi-currency-rupee"></i>5,000</span> <span>/ Day</span></h6>
+
+              <div class="room-feature">
+                <p style=" line-height: 20px;"><strong><i class="bi bi-bounding-box-circles"></i>  Size: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="bi bi-people-fill"></i>  Capacity:</strong><span
+                    style="display: block;">30 ft&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max persion 5</span></p>
+                <p style="margin-bottom: 2px;line-height: 20px;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+                  <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                </svg>  Bed: &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-tv-fill"></i>  Services:</strong><span
+                    style="display: block;">King
+                    beds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wifi,
+                    television ...</span></p>
+              </div>
+              <a href="checkout.html" class="btn view-detail-btn" style="color: rgb(45, 175, 45);">Checkout <i
+                  class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <br>
+          <div class="single-room-area d-flex align-items-center mb-50 wow fadeInUp" data-wow-delay="100ms">
+
+            <div class="room-thumbnail">
+              <img src="https://preview.colorlib.com/theme/roberto/img/bg-img/47.jpg" alt>
+            </div>
+
+            <div class="room-content">
+              <h2 style="margin-top: 1px;">Premium King Room</h2>
+              <h6><span style="color: rgb(45, 175, 45); font-size:20px;display: inline-block;"><i
+                    class="bi bi-currency-rupee"></i>5,000</span> <span>/ Day</span></h6>
+
+              <div class="room-feature">
+                <p style=" line-height: 20px;"><strong><i class="bi bi-bounding-box-circles"></i>  Size: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="bi bi-people-fill"></i>  Capacity:</strong><span
+                    style="display: block;">30 ft&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max persion 5</span></p>
+                <p style="margin-bottom: 2px;line-height: 20px;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+                  <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                </svg>  Bed: &nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-tv-fill"></i>  Services:</strong><span
+                    style="display: block;">King
+                    beds&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wifi,
+                    television ...</span></p>
+              </div>
+              <a href="checkout.html" class="btn view-detail-btn" style="color: rgb(45, 175, 45);">Checkout <i
+                  class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <br>
+          
+        </div>
+        <div class="col-12 col-lg-4 border border border-3 rounded shadow" style="margin-bottom: 90px;">
+
+          <div class="hotel-reservation--area mb-100  ">
+            <form action="#" method="post">
+              <div class="form-group mb-30 mt-2 ">
+                <label for="checkInDate">Date</label>
+                <div class="input-daterange" id="datepicker">
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <input type="text" class="input-small form-control" id="checkInDate" name="checkInDate"
+                        placeholder="Check In">
+                    </div>
+                    <div class="col-6">
+                      <input type="text" class="input-small form-control" name="checkOutDate" placeholder="Check Out">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group mb-30">
+                <label for="guests">Guests</label>
                 <div class="row">
-                    <div class="col-sm-3 ">
-                        <h2 style="color: rgb(21, 157, 21);">Excellent</h2>
-                        <p style="text-align:left"> <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                            <i class="bi bi-star-fill" style="color: #ffc107"></i>
-                            <i class="bi bi-star-fill" style="color: #ffc107"></i>
-                            <i class="bi bi-star-fill" style="color: #ffc107"></i> 4/5
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: red;">1243 Reviews</span>
-                        </p>
-                        <h6 style="color:black; font-weight: 400;">Check-In : 3:00 pm</h6>
-                        <h6 style="color: black;font-weight: 400;">Check-Out : 12:00 pm</h6>
-                        <div
-                            style="text-align: left; margin-top: 5px; color: black; font-size: small;line-height: 2.3; font-weight: 400;">
-                            <i class="bi bi-check2-circle fs-4"></i> Free Cancellation </br>
-                            <i class="bi bi-wifi"></i> Free wi-fi</br>
-                            <i class="bi bi-cup-hot-fill"></i> Free Breakfast<br>
-                            <i class="bi bi-shield-lock"></i> 24 x 7 Security<br>
-                            <i class="bi bi-cup-straw"></i> 24 x 7 Room Service <br>
-                            <i class="bi bi-snow"></i> A/C Rooms, Power Back ups<br>
-                            <i class="bi bi-tv"></i> DTH Service<br>
-                            <i class="bi bi-people-fill"></i> Couple Friendly
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="col">
-                            <div id="carouselExampleAutoplaying" class="carousel slide">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="https://www.resortterraparaiso.com/images/edr/1.jpg"
-                                            class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="https://www.resortterraparaiso.com/images/edr/3.jpg"
-                                            class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="https://www.resortterraparaiso.com/images/edr/6.jpg"
-                                            class="d-block w-100" alt="...">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                  <div class="col-6">
+                    <select name="adults" id="guests" class="form-control">
+                      <option value="adults">Adults</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <select name="children" id="children" class="form-control">
+                      <option value="children">Children</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                    </select>
+                  </div>
                 </div>
-            </div>
+              </div>
+              <div class="form-group mb-50">
+                <div class="slider-range">
+                  <div class="range-price">Max Price: ₹0 - ₹10,000</div>
+                  <label for="customRange2" class="form-label"></label>
+                  <input type="range" class="form-range" min="0" max="10000" id="customRange2">
+                  <p id="sliderValue"></p>
+
+                  <script>
+                    const slider = document.getElementById('customRange2');
+                    const sliderValueDisplay = document.getElementById('sliderValue');
+
+                    slider.addEventListener('input', () => {
+                      sliderValueDisplay.textContent = `Current value: ₹${slider.value}`;
+                    });
+                  </script>
+                </div>
+              </div>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn roberto-btn border w-100">Check Available</button>
+          </div>
+          </form>
         </div>
-    </section>
-    <!-- <script>
-        var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleAutoplaying'), {
-            interval: 2000,
-            wrap: true,
-            pause: 'hover' 
-        });
-    </script> -->
+        <nav class="roberto-pagination wow fadeInUp mb-100 justify-content-end" data-wow-delay="1000ms">
+          <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next <i class="fa fa-angle-right"></i></a></li>
+          </ul>
+      </nav>
+      
+      </div>
+    </div>
+  </div>
+  </div>
 
-    <!-- <section class="ftco-section">
-        <div class="container">
-            <div class="row d-flex">
-                <div class="col-md-2 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('images/image_1.jpg');">
-                        </a>
-                        <div class="text">
-                            <div class="d-flex align-items-center mb-4 topp">
-                                <div class="one">
-                                    <span class="day">11</span>
-                                </div>
-                                <div class="two">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">September</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-                            <p><a href="#" class="btn btn-primary">Read more</a></p>
-                        </div>
+  <footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/bg_3.jpg);">
+    <div class="content">
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <h3 class="heading mb-4">Let's talk about everything!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas debitis, fugit natus?</p>
+                <p><img src="https://preview.colorlib.com/theme/bootstrap/contact-form-16/images/undraw-contact.svg" alt="Image" class="img-fluid"></p>
+              </div>
+              <div class="col-md-6">
+                <form class="mb-5" method="post" id="contactForm" name="contactForm">
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
                     </div>
-                </div>
-                <div class="col-md-2 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('images/image_2.jpg');">
-                        </a>
-                        <div class="text">
-                            <div class="d-flex align-items-center mb-4 topp">
-                                <div class="one">
-                                    <span class="day">11</span>
-                                </div>
-                                <div class="two">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">September</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.</p>
-                            <p><a href="#" class="btn btn-primary">Read more</a></p>
-                        </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <input type="text" class="form-control" name="email" id="email" placeholder="Email">
                     </div>
-                </div>
-                <div class="col-md-2 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('images/image_3.jpg');">
-                        </a>
-                        <div class="text">
-                            <div class="d-flex align-items-center mb-4 topp">
-                                <div class="one">
-                                    <span class="day">11</span>
-                                </div>
-                                <div class="two">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">September</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.</p>
-                            <p><a href="#" class="btn btn-primary">Read more</a></p>
-                        </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
                     </div>
-                </div>
-                <div class="col-md-2 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('images/image_4.jpg');">
-                        </a>
-                        <div class="text">
-                            <div class="d-flex align-items-center mb-4 topp">
-                                <div class="one">
-                                    <span class="day">11</span>
-                                </div>
-                                <div class="two">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">September</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.</p>
-                            <p><a href="#" class="btn btn-primary">Read more</a></p>
-                        </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <textarea class="form-control" name="message" id="message" cols="30" rows="7"
+                        placeholder="Write your message"></textarea>
                     </div>
-                </div>
-                <div class="col-md-2 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('images/image_5.jpg');">
-                        </a>
-                        <div class="text">
-                            <div class="d-flex align-items-center mb-4 topp">
-                                <div class="one">
-                                    <span class="day">11</span>
-                                </div>
-                                <div class="two">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">September</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.</p>
-                            <p><a href="#" class="btn btn-primary">Read more</a></p>
-                        </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                      <span class="submitting"></span>
                     </div>
+                  </div>
+                </form>
                 </div>
-                <div class="col-md-2 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('images/image_6.jpg');">
-                        </a>
-                        <div class="text">
-                            <div class="d-flex align-items-center mb-4 topp">
-                                <div class="one">
-                                    <span class="day">11</span>
-                                </div>
-                                <div class="two">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">September</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Most Popular Place In This World</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.</p>
-                            <p><a href="#" class="btn btn-primary">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-
-    </section> -->
-
-    <footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/bg_3.jpg);">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md pt-5">
-                    <div class="ftco-footer-widget pt-md-5 mb-4">
-                        <h2 class="ftco-heading-2">Providing you the best of comforts in a charming ambience
-                        </h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts.</p>
-
-                    </div>
-                </div>
-                <div class="col-md pt-5 border-left">
-                    <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
-                        <h2 class="ftco-heading-2">Infromation</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Online Enquiry</a></li>
-                            <li><a href="#" class="py-2 d-block">General Enquiries</a></li>
-                            <li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
-                            <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-                            <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-                            <li><a href="#" class="py-2 d-block">Call Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md pt-5 border-left">
-                    <div class="ftco-footer-widget pt-md-5 mb-4">
-                        <h2 class="ftco-heading-2">Experience</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Adventure</a></li>
-                            <li><a href="#" class="py-2 d-block">Hotel and Restaurant</a></li>
-                            <li><a href="#" class="py-2 d-block">Beach</a></li>
-                            <li><a href="#" class="py-2 d-block">Nature</a></li>
-                            <li><a href="#" class="py-2 d-block">Camping</a></li>
-                            <li><a href="#" class="py-2 d-block">Party</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md pt-5 border-left">
-                    <div class="ftco-footer-widget pt-md-5 mb-4">
-                        <h2 class="ftco-heading-2">Have a Questions?</h2>
-                        <div class="block-23 mb-3">
-                            <ul>
-                                <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain
-                                        View, San Francisco, California, USA</span></li>
-                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929
-                                            210</span></a></li>
-                                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
-                                            class="text">info@yourdomain.com</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="ftco-footer-social list-unstyled float-md-center float-lft">
-                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-            </ul>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
 
 
 
-    <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                stroke="#F96D00" />
-        </svg></div>
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 

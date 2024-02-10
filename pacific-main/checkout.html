@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CheckOut</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="validation.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="scss/demo.css">
+  <style>
+    .container {
+      max-width: 1000px;
+    }
+    .lh-condensed {
+      line-height: 1.25;
+    }
+  </style>
+</head>
+<body>
+  <header class="intro">
+    <div class="text-center">
+      <h2>Website name</h2>
+    </div>
+    <h5> Checkout Form </h5>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="mb-3" style="color: rgb(78, 176, 37);">
+            <span>Your cart</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0" style="color: rgb(78, 176, 37);">Product name</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">₹1000</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0" style="color: rgb(78, 176, 37);">Second product</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">₹5000</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0" style="color: rgb(78, 176, 37);">Third item</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">₹2000</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0" style="color: rgb(78, 176, 37);">Promo code</h6>
+                <small>EXAMPLECODE</small>
+              </div>
+              <span class="text-success">-₹3000</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span style="color: rgb(78, 176, 37);">Total (₹)</span>
+              <strong>5000</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Billing address</h4>
+          <form method="post" onsubmit="return test();">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName"><i class="bi bi-person-fill"></i> First name</label>
+                <input type="text" class="form-control" name="FName" id="fname" />
+                <div id="fnameError" style="color: red" ;></div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label for="lastName"><i class="bi bi-person-fill"></i> Middle name</label>
+                <input type="text" class="form-control" name="mName" id="mname" />
+                <div id="mnameError" style="color: red" ;></div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="lastName"><i class="bi bi-person-fill"></i> Last name</label>
+                <input type="text" class="form-control" name="LName" id="lname" />
+                <div id="lnameError" style="color: red" ;></div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="username"><i class="bi bi-telephone-fill"></i> Contact</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">+91</span>
+                  </div>
+                  <input type="text" id="mobile" class="form-control" name="Mobile" maxlength="10" />
+                  <div id="MError" style="color: red" ;></div>
+                </div>
+              </div>
+              
+            </div>
+              <div class="mb-3">
+                <label for="email"><i class="bi bi-envelope-at-fill"></i> Email </label>
+                <input type="text" name="email" class="form-control" id="email" value="" />
+                <div id="EError" style="color: red" ;></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="address"><i class="bi bi-house-door-fill"></i> Address</label>
+                <input type="text" class="form-control" id="address" name="Add" placeholder="1234 Main St">
+                <div id="AError" style="color: red" ;></div>
+              </div>
+              <div class="mb-3">
+                <label for="address2"><i class="bi bi-house-door-fill"></i> Address 2 <span class="text-muted">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+              </div>
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <label for="country"><i class="bi bi-gender-ambiguous"></i> Title</label>
+                  <select class="custom-select d-block w-100 p-2" id="title" style="border: 1px solid #ced4da; border-radius: 3px;">
+                    <option value="">Choose...</option>
+                    <option>Miss</option>
+                    <option>Mrs</option>
+                    <option>Mr</option>
+                    <option>Other</option>
+                  </select>
+                  <div id="TError" style="color: red" ;></div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="country"><i class="bi bi-geo-alt-fill"></i> Country</label>
+                  <select class="custom-select d-block w-100 p-2" id="country"style="border: 1px solid #ced4da; border-radius: 3px;">
+                    <option value="">Choose...</option>
+                    <option>India</option>
+                    <option>NRI</option>
+                  </select>
+                  <div id="CError" style="color: red" ;></div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="state"><i class="bi bi-pin-map-fill"></i> State</label>
+                  <select class="custom-select-lg d-block w-100 p-2" id="state"style="border: 1px solid #ced4da; border-radius: 3px;">
+                    <option value="">Choose...</option>
+                    <option>Karnataka</option>
+                    <option>Mumbai</option>
+                    <option>Delhi</option>
+                  </select>
+                  <div id="SError" style="color: red" ;></div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="zip"><i class="bi bi-geo-fill"></i> Zip</label>
+                  <input type="text" class="form-control" id="zip" pattern="[0-9]{7}" maxlength="7" placeholder="">
+                  <div id="ZError" style="color: red" ;></div>
+                </div>
+              </div>
+              <br>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="same-address">
+                <label class="custom-control-label" for="same-address">Shipping address is the same as my billing
+                  address</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="save-info">
+                <label class="custom-control-label" for="save-info">Save this information for next time</label>
+              </div>
+              <hr class="mb-4">
+              <button class="btn btn-primary btn-lg btn-block" type="submit" value="submit">Proceed to Payment</button>
+          </form>
+        </div>
+      </div>
+      <footer class="my-5 pt-2 text-muted text-center text-small">
+        <p class="mb-1" style="color: rgb(78, 176, 37);">&copy; Company Name</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
