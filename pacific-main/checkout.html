@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script type="text/javascript" src="validation.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="scss/demo.css">
@@ -24,9 +24,11 @@
 <body>
   <header class="intro">
     <div class="text-center">
-      <h2>Website name</h2>
+      <span class="subheading"
+      style="font-size: 30px; display: block; margin: 5px; color: rgb(7, 9, 7); font-family: 'Arizonia'; text-align: center;"> Hotel Booking
+    </span>
     </div>
-    <h5> Checkout Form </h5>
+    <h5> Review your Booking</h5>
   </header>
   <main>
     <div class="container">
@@ -87,13 +89,13 @@
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="firstName"><i class="bi bi-person-fill"></i> First name</label>
-                <input type="text" class="form-control" name="FName" id="fname" />
+                <input type="text" class="form-control" name="FName" id="fname" placeholder="First Name" />
                 <div id="fnameError" style="color: red" ;></div>
               </div>
 
               <div class="col-md-6 mb-3">
                 <label for="lastName"><i class="bi bi-person-fill"></i> Middle name</label>
-                <input type="text" class="form-control" name="mName" id="mname" />
+                <input type="text" class="form-control" name="mName" id="mname" placeholder="Middle Name"/>
                 <div id="mnameError" style="color: red" ;></div>
               </div>
 
@@ -101,7 +103,7 @@
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="lastName"><i class="bi bi-person-fill"></i> Last name</label>
-                <input type="text" class="form-control" name="LName" id="lname" />
+                <input type="text" class="form-control" name="LName" id="lname"placeholder=" Last Name" />
                 <div id="lnameError" style="color: red" ;></div>
               </div>
               <div class="col-md-6 mb-3">
@@ -110,7 +112,7 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text">+91</span>
                   </div>
-                  <input type="text" id="mobile" class="form-control" name="Mobile" maxlength="10" />
+                  <input type="text" id="mobile" class="form-control" name="Mobile" maxlength="10" placeholder=" Contact"  />
                   <div id="MError" style="color: red" ;></div>
                 </div>
               </div>
@@ -118,7 +120,7 @@
             </div>
               <div class="mb-3">
                 <label for="email"><i class="bi bi-envelope-at-fill"></i> Email </label>
-                <input type="text" name="email" class="form-control" id="email" value="" />
+                <input type="text" name="email" class="form-control" id="email" value="" placeholder="example@gmail.com"  />
                 <div id="EError" style="color: red" ;></div>
               </div>
 
@@ -164,7 +166,7 @@
                 </div>
                 <div class="col-md-3 mb-3">
                   <label for="zip"><i class="bi bi-geo-fill"></i> Zip</label>
-                  <input type="text" class="form-control" id="zip" pattern="[0-9]{7}" maxlength="7" placeholder="">
+                  <input type="text" class="form-control" id="zip" pattern="[0-9]{7}" maxlength="7" placeholder="Zip">
                   <div id="ZError" style="color: red" ;></div>
                 </div>
               </div>
