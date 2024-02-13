@@ -2142,3 +2142,94 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+.ftco-section {
+	.ftco-sub-title {
+		font-size: 16px;
+		text-transform: uppercase;
+		letter-spacing: .5em;
+		color: lighten(#ccc, 3%);
+		font-family: $font-family-sans-serif;
+		font-weight: 300;
+	}
+
+	.ftco-primary-title {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+}
+
+.ftco-section {
+	padding: 6em 0;
+	position: relative;
+
+	@include media-breakpoint-down(sm) {
+		padding: 6em 0;
+	}
+}
+.ftco-section {
+	position: relative;
+	width: 100%;
+	display: block;
+
+	.nav-link-wrap {}
+
+	.nav-pills {
+		p {
+			margin-bottom: 0;
+		}
+
+		.nav-link {
+			border-radius: 0;
+			margin-bottom: 0;
+			font-size: 18px;
+			font-weight: 400;
+			position: relative;
+			display: inline-block;
+			margin-left: 5px;
+			margin-right: 5px;
+			color: lighten($black, 70%);
+			@include border-radius(30px);
+
+			&:hover {
+				color: $black;
+			}
+
+			&.active {
+				color: $white;
+				@include transition(.3s);
+
+				&:after {
+					opacity: 1;
+				}
+
+				@include media-breakpoint-down(sm) {
+					&:after {
+						opacity: 0;
+					}
+				}
+			}
+
+			@include media-breakpoint-down(sm) {
+				display: block;
+				width: 100%;
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
+.ftco-menu {
+	// background-size: cover;
+	background-repeat: repeat;
+	background-position: center center;
+}
+.pricing-entry {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    background: #f8f9fa;
+    background: #fff;
+    padding: 30px 20px;
+    -webkit-box-shadow: 0px 15px 24px -21px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 15px 24px -21px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 15px 24px -21px rgba(0, 0, 0, 0.21);
+}

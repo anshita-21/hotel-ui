@@ -186,7 +186,7 @@ th {
 
 label {
   display: inline-block;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0rem; }
 
 button {
   border-radius: 0; }
@@ -2336,12 +2336,12 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5); }
 
 .btn-warning {
-  color: #212529;
+  color: #fff;
   background-color: rgb(94, 191, 52) ;
   border-color: rgb(94, 191, 52); }
   .btn-warning:hover {
-    color: #212529;
-    background-color: rgb(94, 191, 52);
+    color: #fff;
+    background-color: rgb(122, 207, 70);
     border-color: rgb(94, 191, 52); }
   .btn-warning:focus, .btn-warning.focus {
     color: #212529;
@@ -9115,7 +9115,7 @@ h1, h2, h3, h4, h5,
         display: none; } }
 
 .form-control {
-  height: 52px !important;
+  height: 39px !important;
   background: #fff !important;
   color: #000000 !important;
   font-size: 18px;
@@ -9839,13 +9839,13 @@ textarea.form-control {
   padding: 0;
   margin: 0; }
   .comment-list .children {
-    padding: 50px 0 0 40px;
+    padding: 30px 0 0 20px;
     margin: 0;
     float: left;
     width: 100%; }
   .comment-list li {
     padding: 0;
-    margin: 0 0 30px 0;
+    margin: 0 0 10px 0;
     float: left;
     width: 100%;
     clear: both;
@@ -10085,3 +10085,5 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* newww */
