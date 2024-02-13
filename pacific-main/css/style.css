@@ -509,7 +509,7 @@ pre {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
+  padding-right: 10px;
   padding-left: 15px; }
 
 .col {
@@ -2356,12 +2356,12 @@ fieldset:disabled a.btn {
   .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
   .show > .btn-warning.dropdown-toggle {
     color: #212529;
-    background-color: rgba(79, 222, 12, 0.5);
-    border-color: rgba(79, 222, 12, 0.5) }
+    background-color:rgb(122, 207, 70);
+    border-color:rgb(122, 207, 70); }
     .btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus,
     .show > .btn-warning.dropdown-toggle:focus {
-      -webkit-box-shadow: 0 0 0 0.2rem rgba(79, 222, 12, 0.5);
-      box-shadow: 0 0 0 0.2rem rgba(79, 222, 12, 0.5); }
+      -webkit-box-shadow: 0 0 0 0.2rem rgb(122, 207, 70);
+      box-shadow: 0 0 0 0.2remrgb(122, 207, 70); }
 
 .btn-danger {
   color: #fff;
