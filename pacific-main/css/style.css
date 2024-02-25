@@ -133,11 +133,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #007bff;
+  color: #5fc942;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #0056b3;
+    color: #5fc942;
     text-decoration: underline; }
 
 a:not([href]) {
@@ -8371,7 +8371,7 @@ h1, h2, h3, h4, h5,
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif; }
+  font-family: var(--font-family-sans-serif) }
 
 .text-primary {
   color: rgb(78, 176, 37) !important; }
@@ -9118,7 +9118,7 @@ h1, h2, h3, h4, h5,
   height: 39px !important;
   background: #fff !important;
   color: #000000 !important;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 5px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
